@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Genshin Impact</title>
+    <link rel="stylesheet" href="Genshin.css"> 
+    <script src="Genshin.js"></script>
+    <link rel="stylesheet" href="General.css"> 
+    <link rel="stylesheet" href="city.css"> 
+    <link rel="stylesheet" href="news.css"> 
+    <link rel="stylesheet" href="poster.css"> 
+    <link rel="stylesheet" href="bottom-header.css"> 
+    <script defer src="transition.js"></script>
+  </head>
+  <body> 
+    <div class="frame">
+      <div class="home">
+      <section>
+        <div class="header hidden1">
+          <div class="header-logo">
+            <img class="logo" src="Logo.png">
+          </div>
+          <div class="header-wrap">
+            <div class="header-menu">
+              <a class="header-home" id="home" href="Apps.html">HOME</a>
+              <a class="header-news" id="news" onmouseover="hover_news()" onmouseout="Default()">NEWS</a>
+              <a class="header-characters" id="characters" onmouseover="hover_characters()" onmouseout="Default()">CHARACTERS</a>
+              <div class="header-explore" id="explore" onmouseover="hover_explore(), hover_explore_menu()" onmouseout="Default(), hover_explore_menu_off()">EXPLORE
+                <div class="down-arrow">
+                </div>
+              </div>
+              <ul class="header-explore-menu" id="explore-menu" onmouseout="hover_explore_menu_off()">
+                <li>
+                  <a class="header-explore-link" id="explore-link">
+                    ABOUT GAME
+                  </a>
+                </li>
+                <li>
+                  <a class="header-explore-link" id="explore-link">
+                    TEYVAT
+                  </a>
+                </li>
+                <li>
+                  <a class="header-explore-link" id="explore-link">
+                    ITINERARY
+                  </a>
+                </li>
+                <li>
+                  <a class="header-explore-link" id="explore-link">
+                    MANGA
+                  </a>
+                </li>
+              </ul>
+              <div class="header-more" onmouseover="hover_more_menu(), hover_more()" onmouseout ="hover_more_menu_off()">More
+                <div class="down-arrow">
+                </div>
+              </div>
+              <ul class="header-more-menu" id="more-menu" onmouseout="hover_more_menu_off()">
+                <li>
+                  <a class="header-more-link" id="more-link">
+                    HoYoLAB
+                  </a>
+                </li>
+                <li>
+                  <a class="header-more-link" id="more-link">
+                    TOP-UP
+                  </a>
+                </li>
+                <li>
+                  <a class="header-more-link" id="more-link">
+                    REDEEM CODE
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-nav" id="navigation">
+            </div>
+          </div>
+          <div class="header-profile">
+            <div class="log-in">Log In </div>
+            <div class="pic">
+              <img src="Profile.png" class="profile-pic">
+            </div>
+          </div>
+          <div class="header-download">
+            <img src="download.png" class="download">
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="poster">
+          <div class="bg1">
+            <video class="bg" autoplay loop muted>
+              <source src="bg.mp4" type="audio/mp4">
+            </video>
+            <div class="download-column">
+              <div class="play-button hidden1">
+                <img class="button" src="button.png">
+                <button class="play">
+                  <img class="play2" src="play2.png">
+                </button>
+              </div>
+              <div class="play-text hidden1">
+                Released on Multiple Platforms - Download Now!
+              </div>
+              <div class="play-platforms hidden1">
+                <img class="PS4" src="PS4.png">
+                <img class="APP" src="App.png">
+                <img class="GOOGLE" src="Google.png">
+                <img class="WINDOWS" src="Windows.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+        <div class="news">
+          <div class="bg2">
+            <img class="bg2-1" src="bg2.jpg">
+            <h3 class="news-title hidden2">
+              <img src="title1.png" class="title1">
+              NEWS
+              <img src="title2.png" class="title2">
+            </h3>
+            <div class="news-main">
+              <div class="news-photos hidden2">
+                <div class="slides">
+                  <img class="news-slides" src="news1.jpg">
+                </div>
+                <div class="slides">
+                  <img class="news-slides" src="news2.jpg">
+                </div>
+                <div class="slides">
+                  <img class="news-slides" src="news3.jpg">
+                </div>
+                <div class="slides">
+                  <img class="news-slides" src="news4.jpg">
+                </div>
+                <div class="news-buttons">
+                  <button class="news-button1" onclick ="news_click_1()"></button>
+                  <button class="news-button2" onclick ="news_click_2()"></button>
+                  <button class="news-button3" onclick ="news_click_3()"></button>
+                  <button class="news-button4" onclick ="news_click_4()"></button>
+                </div>
+              </div>
+              <div class="news-content hidden2">
+                <ul class="news-list-title">
+                  <div class="news-title-container">
+                    <p> Latest</p>
+                    <div class="news-title-underline">
+                    </div>
+                  </div>
+                </ul>
+                <ul class="news-list">
+                  <li>
+                    <a class="news-item">
+                      <p class="news-text">
+                        Genshin Impact Account Security Information
+                      </p>
+                      <p class="news-date">
+                        Jan 9, 2023
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="news-item">
+                      <p class="news-text">
+                        Genshin Impact Version 3.4 Preview
+                      </p>
+                      <p class="news-date">
+                        Jan 7, 2023
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="news-item">
+                      <p class="news-text">
+                        Outfit Teaser: Teyvat Style - Flowers Between Pages
+                      </p>
+                      <p class="news-date">
+                        Jan 7, 2023
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="news-item">
+                      <p class="news-text">
+                        "Let's do something quiet but cultured." - Lisa's New Outfit
+                      </p>
+                      <p class="news-date">
+                        Jan 7, 2023
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="news-item">
+                      <p class="news-text">
+                        "I'll seek out the truth in my own way." - Kamisato Ayaka's New Outfit
+                      </p>
+                      <p class="news-date">
+                        Jan 7, 2023
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="city">
+          <ul class="city-types">
+            <div class="cities" onmouseover="city_hover('city1', 'mondstadt', 'city1-display')" onmouseout="city_hover_off('city1', 'city1-display')" id="city1">
+              <img src="mondstadt.jpg" id="mondstadt" class="mondstadt">
+              <div class="city-overlay">
+                <img src="sucrose.png" class="city1-display">
+              </div>
+              <div class="city-background">
+                <p>Mondstadt</p>
+              </div>
+            </div>
+            <div class="cities" onmouseover="city_hover('city2', 'liyue', 'city2-display')" onmouseout="city_hover_off('city2', 'city2-display')" id="city2">
+              <img src="Liyue.jpg" id="liyue" class="liyue">
+              <div class="city-overlay">
+                <img src="xiangling.png" class="city2-display">
+              </div>
+              <div class="city-background">
+                <p>Liyue</p>
+              </div>
+            </div>
+            <div class="cities" onmouseover="city_hover('city3', 'inazuma', 'city3-display')" onmouseout="city_hover_off('city3', 'city3-display')" id="city3">
+              <img src="Inazuma.jpg" id="inazuma" class="inazuma">
+              <img src="Liyue.jpg" id="liyue" class="liyue">
+              <div class="city-overlay">
+                <img src="kokomi.png" class="city3-display">
+              </div>
+              <div class="city-background">
+                <p>Inazuma</p>
+              </div>
+            </div>
+            <div class="cities" onmouseover="city_hover('city4', 'sumeru', 'city4-display')" onmouseout="city_hover_off('city4', 'city4-display')" id="city4">
+              <img src="Sumeru.jpg" id="sumeru" class="sumeru">
+              <div class="city-overlay">
+                <img src="nilou.png" class="city4-display">
+              </div>
+              <div class="city-background">
+                <p>Sumeru</p>
+              </div>
+            </div>
+            <div class="unknown-city">
+              <img src="unknown.jpg" class="unknown">
+              <div class="city-background">
+                <p class="unknown-text">Coming Soon</p>
+              </div>
+            </div>
+          </ul>
+        </div>
+        <div class="bottom-header">
+          <div class="bottom-socials">
+            <img src="fb-active.png">
+            <img src="yt-active.png">
+            <img src="insta-active.png">
+            <img src="twitter-active.png">
+            <img src="discord-active.png">
+          </div>
+          <div class="bottom-info">
+            <img class="bottom-logo" src="Logo.png">
+            <div class="bottom-contact">
+              <p>Privacy Policy</p>
+              <p>Terms of Service</p>
+              <p>About Us</p>
+              <p>Contact Us</p>
+            </div>
+            <img class="hoyoverse" src="hoyoverse.png">
+          </div>
+          <div class="language-div" id="language-button">
+            <div class="language" onclick="language_click(this,'language-container')">
+              <img src="language.png">
+              <p src="current-language">English</p>
+              <div class="language-arrow"></div>
+            </div>
+            <div class="language-container" id="language-container">
+              <ul>
+                <li>English </li>
+                <li>Indonesia </li>
+                <li>Italiano </li>
+                <li>Vietnamese </li>
+                <li>Japanese </li>
+                <li>Korean </li>
+                <li>Chinese </li>
+                <li>Portugues </li>
+                <li>Turkish </li>
+                <li>Francais </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+      <div class="socials" id="social-tab" style="right: 0px;">
+        <p class="socials-title">Follow Us</p>
+        <ul class="socials-column">
+          <li>
+            <div class="socials-tag" onmouseover="hover_socials(this, 'fb-text'), hover_socials_icon('icon-fb', 'fb-active.png')" onmouseout="socials_default(this, 'fb-text'), hover_socials_icon_off('icon-fb', 'fb.png')" id="socials-background">
+              <img class="icon-facebook" id="icon-fb">
+              <p class="socials-text" id="fb-text">
+                Facebook
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="socials-tag" onmouseover="hover_socials(this, 'insta-text'), hover_socials_icon('icon-insta', 'insta-active.png')" onmouseout="socials_default(this, 'insta-text'), hover_socials_icon_off('icon-insta', 'insta.png')" id="socials-background">
+              <img class="icon-instagram" id="icon-insta">
+              <p class="socials-text" id="insta-text">
+                Instagram
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="socials-tag" onmouseover="hover_socials(this, 'youtube-text'), hover_socials_icon('icon-yt', 'yt-active.png')" onmouseout="socials_default(this, 'youtube-text'), hover_socials_icon_off('icon-yt', 'yt.png')" id="socials-background">
+              <img class="icon-youtube" id="icon-yt">
+              <p class="socials-text" id="youtube-text">
+                YouTube
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="socials-tag" onmouseover="hover_socials(this, 'twitter-text'), hover_socials_icon('icon-tweet', 'twitter-active.png')" onmouseout="socials_default(this, 'twitter-text'),  hover_socials_icon_off('icon-tweet', 'twitter.png')" id="socials-background">
+              <img class="icon-twitter" id="icon-tweet">
+              <p class="socials-text" id="twitter-text">
+                Twitter
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="socials-tag" onmouseover="hover_socials(this, 'discord-text'), hover_socials_icon('icon-disc', 'discord-active.png')" onmouseout="socials_default(this, 'discord-text'), hover_socials_icon_off('icon-disc', 'discord.png')" id="socials-background">
+              <img class="icon-discord" id="icon-disc">
+              <p class="socials-text" id="discord-text">
+                Discord
+              </p>
+            </div>
+          </li>
+        </ul>
+        <button class="social-button" onclick="social_tab_toggle('social-tab')">
+          <img src="fwd.png" class="fwd" id="social-button" style="transform: none;">
+        </button>
+      </div>
+      </div>
+
+  </body>
+</html>

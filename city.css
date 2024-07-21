@@ -1,0 +1,136 @@
+.city {
+  width: 100%;
+  height: 130%;
+  scroll-snap-align: start;
+  position: relative;
+  background-color: #111;
+}
+
+.city-types {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  display: relative;
+}
+
+.cities {
+  overflow: hidden;
+  border-style: solid;
+  border-color: white;
+  border-width: 0;
+  box-sizing: border-box;
+  border-width: 0px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.mondstadt,
+.liyue,
+.inazuma,
+.sumeru
+{
+  width: 100%;
+  height: 100%;
+  filter: brightness(60%);
+  transition: transform 0.6s, filter 0.6s ease-out;
+  min-width: 1800px;
+}
+
+
+.mondstadt:hover,
+.liyue:hover,
+.inazuma:hover,
+.sumeru:hover
+{
+  filter: brightness(100%);
+  transform: scale(1.15);
+}
+
+.city div {
+  width: 100%;
+  height: 250px;
+}
+
+.city1-display {
+  position: relative;
+  width: 1100px;
+  top: -100px;
+  right: -600px;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+
+.city-overlay {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+.city2-display {
+  position: relative;
+  width: 1000px;
+  top: -100px;
+  right: -700px;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+
+.city3-display {
+  position: relative;
+  width: 1000px;
+  top: -100px;
+  right: -700px;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+
+.city4-display {
+  position: relative;
+  width: 1000px;
+  top: -100px;
+  right: -700px;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+
+.city-background {
+  position: absolute;
+  pointer-events: none;
+  top: 0px;
+  height: 250px;
+  text-align: center;
+}
+
+.city-backdrop {
+  position: relative;
+  width: 145px;
+}
+
+.city-background p {
+  font-size: 40px;
+  display: inline-block;
+  position: relative;
+  background: url('city-background.png') center no-repeat;;
+  line-height: 180px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+.unknown {
+  filter: brightness(40%);
+  pointer-events: none;
+}
+
+.unknown-text {
+  color: rgb(78, 76, 76);
+}
+
+
+.unknown-city {
+  position: relative;
+  cursor:help
+}
